@@ -1,0 +1,20 @@
+{{#partial "title" }}
+    Create a Custom Greeting!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+    <h1>Key in the Amount:</h1>
+    <form action='/change.hbs'>
+        <div class="form-group">
+            <label for="dollarAmount">Amount</label>
+            <input id="dollarAmount" name="dollarAmount" class="form-control" type="text">
+        </div>
+
+        <button type="submit" class="btn">Go!</button>
+    </form>
+    <!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
